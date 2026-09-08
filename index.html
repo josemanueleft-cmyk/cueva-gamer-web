@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cueva Gamer · Salón recreativo de videojuegos en Palmira</title>
+  <meta name="description" content="PS5, Xbox Series X, Nintendo Switch, VR y simulador de carreras en un mismo lugar. Torneos, granizados y cócteles en Palmira, Valle del Cauca." />
+  <meta name="theme-color" content="#0a0614" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23180f2c'/%3E%3Ccircle cx='32' cy='32' r='13' fill='%2316f93a'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <link rel="preload" as="image" href="assets/img/venue-crowd.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/img/logo.png" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css?v=20260908" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div class="splash" data-splash aria-hidden="true">
+    <span class="splash-mark"><span class="dot"></span>Cueva Gamer</span>
+  </div>
+
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="nav-logo" href="#main">
+        <img class="nav-logo-mark" src="assets/img/logo.png" alt="Cueva Gamer" width="56" height="56" fetchpriority="high" />
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a class="nav-link" href="#juegos">Catálogo</a>
+        <a class="nav-link" href="torneos.html">Torneos</a>
+        <a class="nav-link" href="#precios">Precios</a>
+        <a class="nav-link" href="#ubicacion">Ubicación</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Reservar <span aria-hidden="true">→</span></a>
+        <button class="nav-burger" data-nav-burger aria-label="Abrir menú" aria-haspopup="true" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-mobile" id="nav-mobile" data-nav-mobile data-open="false" aria-hidden="true">
+    <a href="#juegos">Catálogo</a>
+    <a href="torneos.html">Torneos</a>
+    <a href="#precios">Precios</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#" data-contact="whatsapp" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-gradient" aria-hidden="true"></div>
+      <div class="hero-streaks" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+          <g class="streak streak-green">
+            <polygon points="0,0 36,0 0,90" />
+            <polygon points="70,0 110,0 0,270" />
+            <polygon points="150,0 175,0 30,320" />
+            <polygon points="1440,760 1440,900 1300,900" />
+            <polygon points="1440,660 1440,820 1220,900 1190,900" />
+            <polygon points="1440,600 1440,640 1290,760" />
+          </g>
+          <g class="streak streak-purple">
+            <polygon points="120,0 160,0 20,240" />
+            <polygon points="200,0 235,0 70,340" />
+            <polygon points="1440,520 1440,700 1240,860" />
+            <polygon points="1440,0 1440,90 1350,0" />
+            <polygon points="1440,140 1440,240 1370,180" />
+          </g>
+        </svg>
+      </div>
+      <div class="hero-logo-ghost" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="" />
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="hero-meta"><span class="dot"></span>Salón recreativo · Palmira, Valle del Cauca</span>
+        <h1 class="hero-title">Entra a jugar.<br />Sal <em>campeón</em>.</h1>
+        <p class="hero-sub">PS5, Xbox Series X, Nintendo Switch, VR y simulador de carreras — todo en un mismo lugar, torneos incluidos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 3.5a10.4 10.4 0 0 0-17.2 11.6L2 21l6.1-1.6A10.4 10.4 0 0 0 20.5 3.5Z"/><path d="M8.3 8.4c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.4.2.5.7 1.7.7 1.8.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.1.6.7 1.1 1.5 1.9 2.6 2.4.2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3.1.2.1.9-.2 1.4-.3.5-1.4 1.1-2 1.1-.5 0-1.2 0-3.5-1.2-2.3-1.3-3.7-3.7-3.8-3.9-.1-.2-.9-1.3-.9-2.4 0-1.2.6-1.8.8-2Z" fill="currentColor" stroke="none"/></svg>
+            Reservar por WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#juegos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg>
+            Ver catálogo
+          </a>
+        </div>
+        <div class="hero-platforms">
+          <div class="hero-platform">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="11" rx="5"/><path d="M8 12v3M6.5 13.5h3"/><circle cx="16" cy="12.5" r="1"/><circle cx="18.5" cy="15" r="1"/><path d="M11 8V6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/></svg>
+            <span>PS5</span>
+          </div>
+          <div class="hero-platform">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M7 7l5 6 5-6M8 17c1.2-2 2.4-3.2 4-3.2s2.8 1.2 4 3.2"/></svg>
+            <span>Xbox Series X</span>
+          </div>
+          <div class="hero-platform">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="4"/><circle cx="12" cy="6" r="1"/><path d="M9 18h.01M12 18h.01M15 18h.01"/></svg>
+            <span>Nintendo Switch</span>
+          </div>
+          <div class="hero-platform">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-2.5a2 2 0 0 1-1.6-.8L12 14l-.9 1.2a2 2 0 0 1-1.6.8H7a3 3 0 0 1-3-3V9Z"/><circle cx="8.5" cy="11" r="1"/><circle cx="15.5" cy="11" r="1"/></svg>
+            <span>VR</span>
+          </div>
+          <div class="hero-platform">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18"/><path d="M4 4h6l1 1.5H20L17 9l3 3.5H11L10 11H4Z"/></svg>
+            <span>Simulador de carreras</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-wrap">
+      <div class="marquee">
+        <div class="marquee-track" data-marquee>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="11" rx="5"/><path d="M8 12v3M6.5 13.5h3"/><circle cx="16" cy="12.5" r="1"/><circle cx="18.5" cy="15" r="1"/><path d="M11 8V6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/></svg>
+            <em>PS5</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M7 7l5 6 5-6M8 17c1.2-2 2.4-3.2 4-3.2s2.8 1.2 4 3.2"/></svg>
+            <em>Xbox Series X</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="4"/><circle cx="12" cy="6" r="1"/><path d="M9 18h.01M12 18h.01M15 18h.01"/></svg>
+            <em>Nintendo Switch</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-2.5a2 2 0 0 1-1.6-.8L12 14l-.9 1.2a2 2 0 0 1-1.6.8H7a3 3 0 0 1-3-3V9Z"/><circle cx="8.5" cy="11" r="1"/><circle cx="15.5" cy="11" r="1"/></svg>
+            <em>Realidad Virtual</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18"/><path d="M4 4h6l1 1.5H20L17 9l3 3.5H11L10 11H4Z"/></svg>
+            <em>Simulador de F1</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+            <em>Pump It Up</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-5 5v0a5 5 0 0 1-5-5V4Z"/><path d="M7 5H4v1a3 3 0 0 0 3 3M17 5h3v1a3 3 0 0 1-3 3"/><path d="M12 13v3.5M9 20.5h6M10 20.5v-2.6M14 20.5v-2.6"/></svg>
+            <em>Torneos</em>
+          </span>
+          <span class="marquee-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.5 8.5a4.5 4.5 0 0 1-4.5 3.7v0a4.5 4.5 0 0 1-4.5-3.7L6 3Z"/><path d="M12 15.2V20M8.5 20h7"/><path d="M8 7h8"/></svg>
+            <em>Granizados y cócteles</em>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section container ambient-section">
+      <div class="ambient-logo-ghost" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="" />
+      </div>
+      <div class="ambient-carousel games-carousel" data-reveal>
+        <button class="carousel-arrow carousel-arrow--prev" data-carousel-prev aria-label="Imagen anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="ambient-track" data-carousel-track>
+          <figure class="ambient-slide ambient-slide--captioned">
+            <img src="assets/img/venue-crowd.jpg" alt="Grupo de clientes jugando torneo en Cueva Gamer, ambiente con luces neón moradas" loading="lazy" decoding="async" />
+            <figcaption class="ambient-caption">Así se vive la cueva: pantallas encendidas, escuadrón completo, la partida que se alarga.</figcaption>
+          </figure>
+          <figure class="ambient-slide ambient-slide--captioned">
+            <img src="assets/img/torneo-fc26-1.jpg" alt="Dupla campeona del torneo 2vs2 de FC26 en Cueva Gamer, primer puesto" loading="lazy" decoding="async" />
+            <figcaption class="ambient-caption">Así se sale de la cueva: trofeo en mano y premio en efectivo — Torneo 2vs2 FC26.</figcaption>
+          </figure>
+          <figure class="ambient-slide ambient-slide--captioned">
+            <img src="assets/img/torneo-fc26-2.jpg" alt="Segunda dupla campeona del torneo 2vs2 de FC26 en Cueva Gamer, primer puesto" loading="lazy" decoding="async" />
+            <figcaption class="ambient-caption">Otra dupla campeona celebrando su Torneo 2vs2 FC26.</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-arrow carousel-arrow--next" data-carousel-next aria-label="Siguiente imagen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="consoles-banner" data-reveal>
+        <img class="consoles-banner-img" src="assets/img/venue-consolas.jpg" alt="Controles y consolas disponibles en Cueva Gamer: PS5, Nintendo Switch, Xbox y realidad virtual" loading="lazy" decoding="async" />
+        <div class="consoles-banner-fade" aria-hidden="true"></div>
+        <div class="container">
+          <div class="consoles-banner-content">
+            <span class="eyebrow">Catálogo</span>
+            <h2>Elige cómo <em>juegas</em> hoy.</h2>
+            <p>Siete formas de pasar el rato, solo, en pareja o con el escuadrón completo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="catalog-grid">
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="11" rx="5"/><path d="M8 12v3M6.5 13.5h3"/><circle cx="16" cy="12.5" r="1"/><circle cx="18.5" cy="15" r="1"/><path d="M11 8V6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/></svg>
+          </span>
+          <h3>PlayStation 5</h3>
+          <p>Catálogo actualizado con los lanzamientos más pedidos, en pantalla grande.</p>
+          <span class="card-tag">Individual y multijugador</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="11" rx="5"/><path d="M7 11v4M5 13h4"/><circle cx="17" cy="12.5" r="1"/><circle cx="17" cy="15.5" r="1"/><circle cx="15.5" cy="14" r="1"/><circle cx="18.5" cy="14" r="1"/></svg>
+          </span>
+          <h3>Xbox Series X</h3>
+          <p>Game Pass y multijugador local para ir con el escuadrón completo.</p>
+          <span class="card-tag">Hasta 4 jugadores</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="4"/><circle cx="12" cy="6" r="1"/><path d="M9 18h.01M12 18h.01M15 18h.01"/></svg>
+          </span>
+          <h3>Nintendo Switch</h3>
+          <p>Mario Kart, Smash y todo lo que se juega mejor de a dos.</p>
+          <span class="card-tag">Ideal para parejas</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-2.5a2 2 0 0 1-1.6-.8L12 14l-.9 1.2a2 2 0 0 1-1.6.8H7a3 3 0 0 1-3-3V9Z"/><circle cx="8.5" cy="11" r="1"/><circle cx="15.5" cy="11" r="1"/></svg>
+          </span>
+          <h3>Realidad Virtual</h3>
+          <p>Sube el nivel: sets de VR para vivir el juego desde adentro.</p>
+          <span class="card-tag">Experiencia inmersiva</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/><path d="M12 4v2.2M12 17.8V20M4 12h2.2M17.8 12H20"/></svg>
+          </span>
+          <h3>Simulador de F1</h3>
+          <p>Volante y asiento con feedback real de pista para pilotos exigentes.</p>
+          <span class="card-tag">Sensación de carrera real</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+          </span>
+          <h3>Pump It Up</h3>
+          <p>La pista de baile que reta piernas y pulmón por igual.</p>
+          <span class="card-tag">Cardio con estilo</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.5 8.5a4.5 4.5 0 0 1-4.5 3.7v0a4.5 4.5 0 0 1-4.5-3.7L6 3Z"/><path d="M12 15.2V20M8.5 20h7"/><path d="M8 7h8"/></svg>
+          </span>
+          <h3>Granizados y cócteles</h3>
+          <p>Barra propia: granizados para todos, cócteles para quienes ya pueden.</p>
+          <span class="card-tag">Barra propia</span>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="section container games-app" id="juegos" data-games-app>
+      <div class="games-head" data-reveal>
+        <div>
+          <span class="eyebrow">Nuestro catálogo</span>
+          <h2>Catálogo de <em>juegos</em>.</h2>
+          <p>Encuentra tu próximo juego y disfruta la experiencia en La Cueva Gamer.</p>
+        </div>
+        <a class="text-link games-see-all" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Ver catálogo completo <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="games-quick" data-reveal>
+        <span class="games-quick-label">¿Qué quieres jugar?</span>
+        <div class="games-quick-list" data-games-quick>
+          <button type="button" class="games-quick-btn" data-quick-platform="ps5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="11" rx="5"/><path d="M8 12v3M6.5 13.5h3"/><circle cx="16" cy="12.5" r="1"/><circle cx="18.5" cy="15" r="1"/><path d="M11 8V6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/></svg>
+            <span>PlayStation</span>
+          </button>
+          <button type="button" class="games-quick-btn" data-quick-platform="xbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M7 7l5 6 5-6M8 17c1.2-2 2.4-3.2 4-3.2s2.8 1.2 4 3.2"/></svg>
+            <span>Xbox</span>
+          </button>
+          <button type="button" class="games-quick-btn" data-quick-platform="switch">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="4"/><circle cx="12" cy="6" r="1"/><path d="M9 18h.01M12 18h.01M15 18h.01"/></svg>
+            <span>Nintendo Switch</span>
+          </button>
+          <button type="button" class="games-quick-btn games-quick-btn--vr" data-quick-platform="vr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-2.5a2 2 0 0 1-1.6-.8L12 14l-.9 1.2a2 2 0 0 1-1.6.8H7a3 3 0 0 1-3-3V9Z"/><circle cx="8.5" cy="11" r="1"/><circle cx="15.5" cy="11" r="1"/></svg>
+            <span>Realidad Virtual <em>VR</em></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="games-toolbar" data-reveal>
+        <label class="games-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" placeholder="Buscar un juego..." aria-label="Buscar un juego" data-games-search />
+        </label>
+        <span class="games-count" data-games-count>18 juegos disponibles</span>
+      </div>
+
+      <div class="games-filters" data-games-filters="platform" role="group" aria-label="Filtrar por plataforma">
+        <button type="button" class="filter-pill is-active" data-filter-platform="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="filter-pill" data-filter-platform="ps5" aria-pressed="false">PlayStation</button>
+        <button type="button" class="filter-pill" data-filter-platform="xbox" aria-pressed="false">Xbox</button>
+        <button type="button" class="filter-pill" data-filter-platform="switch" aria-pressed="false">Nintendo Switch</button>
+        <button type="button" class="filter-pill" data-filter-platform="pc" aria-pressed="false">PC</button>
+        <button type="button" class="filter-pill" data-filter-platform="vr" aria-pressed="false">Realidad Virtual</button>
+      </div>
+
+      <div class="games-filters games-filters--secondary" data-games-filters="genre" role="group" aria-label="Filtrar por género">
+        <button type="button" class="filter-pill is-active" data-filter-genre="todos" aria-pressed="true">Todos los géneros</button>
+        <button type="button" class="filter-pill" data-filter-genre="accion" aria-pressed="false">Acción</button>
+        <button type="button" class="filter-pill" data-filter-genre="aventura" aria-pressed="false">Aventura</button>
+        <button type="button" class="filter-pill" data-filter-genre="deportes" aria-pressed="false">Deportes</button>
+        <button type="button" class="filter-pill" data-filter-genre="carreras" aria-pressed="false">Carreras</button>
+        <button type="button" class="filter-pill" data-filter-genre="peleas" aria-pressed="false">Peleas</button>
+        <button type="button" class="filter-pill" data-filter-genre="shooter" aria-pressed="false">Shooter</button>
+        <button type="button" class="filter-pill" data-filter-genre="estrategia" aria-pressed="false">Estrategia</button>
+        <button type="button" class="filter-pill" data-filter-genre="otros" aria-pressed="false">Otros</button>
+      </div>
+
+      <div class="games-grid" data-games-grid></div>
+
+      <div class="games-empty" data-games-empty hidden>
+        <p class="games-empty-title">No encontramos ese juego</p>
+        <p class="games-empty-sub">Prueba con otro nombre o categoría.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="torneos">
+      <div class="torneos" data-reveal>
+        <div class="torneos-grid">
+          <div>
+            <span class="eyebrow">Torneos</span>
+            <h2>Compite de verdad.</h2>
+            <p>Torneos presenciales y online cada mes, por consola y por equipos. Anótate por WhatsApp o entérate primero en Instagram.</p>
+            <div class="torneos-actions">
+              <a class="btn btn-primary" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Anotarme al próximo torneo</a>
+              <a class="btn btn-ghost" href="torneos.html">Ver historial de torneos</a>
+            </div>
+          </div>
+          <div class="torneos-stats">
+            <div class="torneos-stat">
+              <strong><span data-count-to="4.9">4.9</span>★</strong>
+              <span>en Google</span>
+            </div>
+            <div class="torneos-stat">
+              <strong><span data-count-to="37" data-count-suffix="+">37+</span></strong>
+              <span>reseñas</span>
+            </div>
+            <div class="torneos-stat">
+              <strong><span data-count-to="7">7</span></strong>
+              <span>experiencias</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Lo dicen los clientes</span>
+        <h2>Reseñas reales, en Google.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial" data-reveal>
+          <span class="testimonial-stars">★★★★★</span>
+          <p>&ldquo;Muy buena experiencia. El espacio está limpio y bien mantenido. Y la oferta de videojuegos es amplia y actualizada. Muy bueno para ir en familia.&rdquo;</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar">BV</span>
+            <div>
+              <strong>Boris Villamil</strong>
+              <span>Reseña de Google</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial" data-reveal>
+          <span class="testimonial-stars">★★★★★</span>
+          <p>&ldquo;Excelente servicio y entorno, juegos variados, deliciosos cócteles y buena atención al cliente. Sitio ideal para ir con amigos o en familia.&rdquo;</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar">D</span>
+            <div>
+              <strong>Damian</strong>
+              <span>Reseña de Google</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial" data-reveal>
+          <span class="testimonial-stars">★★★★★</span>
+          <p>&ldquo;Muy buen lugar para pasarla solo, con amigos y con familiares. Catálogo variado de juegos y muy buena atención al cliente.&rdquo;</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar">JA</span>
+            <div>
+              <strong>Johan Alvarez</strong>
+              <span>Reseña de Google</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="precios">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Tarifas y horario</span>
+        <h2>Ven cuando quieras, paga lo justo.</h2>
+        <p>Las tarifas varían según consola, franja horaria y número de puestos. Te las confirmamos al instante por WhatsApp.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card" data-reveal>
+          <h3>Por consola / hora</h3>
+          <p>PS5, Xbox o Switch a tu ritmo, solo o acompañado.</p>
+          <span class="price-tag">Tarifa por WhatsApp</span>
+        </div>
+        <div class="price-card" data-reveal>
+          <h3>Plan grupo</h3>
+          <p>Varios puestos a la vez — ideal para cumpleaños y despedidas.</p>
+          <span class="price-tag">Tarifa por WhatsApp</span>
+        </div>
+        <div class="price-card" data-reveal>
+          <h3>Torneo presencial</h3>
+          <p>Inscripción por evento, con premios para los primeros lugares.</p>
+          <span class="price-tag">Tarifa por WhatsApp</span>
+        </div>
+      </div>
+      <div class="hours-band" data-reveal>
+        <div>
+          <strong>Horario</strong><br />
+          <span>Todos los días desde las 2:00 PM</span>
+        </div>
+        <div>
+          <strong>Teléfono</strong><br />
+          <span><a class="text-link" data-contact="phoneHref" href="#">323 507 2810</a></span>
+        </div>
+        <div>
+          <strong>Reservas</strong><br />
+          <span><a class="text-link" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Por WhatsApp</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="ubicacion">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Ubicación</span>
+        <h2>Te esperamos en Palmira.</h2>
+      </div>
+      <div class="ubicacion-grid">
+        <div class="ubicacion-card" data-reveal>
+          <div class="ubicacion-row">
+            <div>
+              <strong>Dirección</strong>
+              <span>Cra. 33 #24-46, Palmira, Valle del Cauca</span>
+            </div>
+          </div>
+          <div class="ubicacion-row">
+            <div>
+              <strong>Horario</strong>
+              <span>Todos los días desde las 2:00 PM</span>
+            </div>
+          </div>
+          <div class="ubicacion-row">
+            <div>
+              <strong>Contacto</strong>
+              <span>323 507 2810 · @cuevagamer_</span>
+            </div>
+          </div>
+          <div class="torneos-actions" style="margin-top:1.4rem;">
+            <a class="btn btn-primary btn-sm" data-contact="mapsUrl" href="#" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost btn-sm" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          </div>
+        </div>
+        <div class="ubicacion-map" data-reveal>
+          <iframe
+            title="Mapa de ubicación de Cueva Gamer en Palmira"
+            src="https://www.google.com/maps?q=Cra.+33+%2324-46,+Palmira,+Valle+del+Cauca&output=embed"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="final-cta" data-reveal>
+        <span class="eyebrow">Cueva Gamer · Palmira</span>
+        <h2>Tu próxima partida empieza aquí.</h2>
+        <p>Reserva tu puesto, arma el escuadrón y entra a jugar.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+          <a class="btn btn-ghost" href="#juegos">Ver catálogo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo"><img class="nav-logo-mark" src="assets/img/logo.png" alt="" width="32" height="32" loading="lazy" />Cueva Gamer</span>
+        <p>Salón recreativo de videojuegos en Palmira, Valle del Cauca. PS5, Xbox, Switch, VR, simulador de carreras, torneos y barra propia.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Sitio</h4>
+          <a href="#juegos">Catálogo</a>
+          <a href="torneos.html">Torneos</a>
+          <a href="#precios">Precios</a>
+          <a href="#ubicacion">Ubicación</a>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos</h4>
+          <a data-contact="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a data-contact="tiktok" href="#" target="_blank" rel="noopener">TikTok</a>
+          <a data-contact="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Cueva Gamer · Palmira, Valle del Cauca</span>
+      <a href="creditos.html">Créditos fotográficos →</a>
+    </div>
+  </footer>
+
+  <div class="game-modal" data-game-modal hidden>
+    <div class="game-modal-backdrop" data-modal-close></div>
+    <div class="game-modal-panel" role="dialog" aria-modal="true" aria-labelledby="game-modal-title">
+      <button type="button" class="game-modal-close" data-modal-close data-modal-close-btn aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="game-modal-poster" data-modal-poster></div>
+      <div class="game-modal-body">
+        <span class="eyebrow" data-modal-genre>Género</span>
+        <h2 id="game-modal-title" data-modal-name>Nombre del juego</h2>
+        <p class="game-modal-description" data-modal-description></p>
+        <div class="game-modal-meta">
+          <div class="game-meta-row" data-modal-platform></div>
+          <div class="game-meta-row" data-modal-players></div>
+          <div class="game-availability" data-modal-availability></div>
+        </div>
+        <div class="game-modal-actions">
+          <a class="btn btn-primary" data-modal-whatsapp target="_blank" rel="noopener">Consultar disponibilidad</a>
+          <a class="btn btn-ghost" data-modal-url target="_blank" rel="noopener">Ver ficha oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="lib/games-data.js"></script>
+  <script defer src="lib/games-catalog.js"></script>
+  <script defer src="main.js?v=20260908"></script>
+</body>
+</html>
