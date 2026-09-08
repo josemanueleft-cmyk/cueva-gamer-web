@@ -1,0 +1,4 @@
+.git
+deploy_pkg
+Dockerfile
+.dockerignore
